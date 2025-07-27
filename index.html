@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme</title>
+    <style>
+        .theme{
+            fill: aliceblue;
+            background-color: white;
+            background-repeat: repeat;
+        }
+        .dark{
+            background-color:rgb(36, 33, 33) ;
+            color: white;
+        }
+        button{
+            margin : 20px;
+            font-size: 20px;
+            background-color: black;
+            color:white;
+        }
+        .lightButton{
+            background-color: white;
+            color: black;
+        }
+        .buttoncolor{
+
+            background-color: rgb(36, 33, 33);
+            color: white;
+            
+            
+        }
+
+
+    </style>
+</head>
+<body class = "theme">
+    <div > 
+    <button class = "buttoncolor">Dark Theme</button>
+    <script>
+        function darkTheme(){
+            let theme = document.querySelector(".theme");
+            theme.classList.add("dark");
+        }
+            // let button = document.querySelector("lightButton")
+        
+        function changeButtoncolor(){
+            let buttonChange = document.querySelector(".buttoncolor");
+            buttonChange.classList.remove("buttoncolor");
+            buttonChange.classList.add("lightButton");
+        }
+            let button = document.querySelector("button");
+            
+            button.addEventListener("click",darkTheme);
+            button.addEventListener("click", changeButtoncolor);
+
+            
+            // box.classList.add("buttoncolor");
+        
+    </script></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Class Manipulation</title>
+    <style>
+        .box {
+            background: red;
+            width: 400px;
+            height: 400px;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green {
+            background-color: green;
+        }
+        button{
+            margin: 20 px;
+            font-size: 30px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box "> Hello</div>
+    <button >Make it blue</button>
+    <script>
+        function makeItBlue(){
+          let box = document.querySelector(".box"); 
+          
+          box.classList.add("blue"); 
+        }
+        let button = document.querySelector("button");
+        button.addEventListener("click", makeItBlue);
+        
+        // box.innerHTML = "Hello box";
+        //     console.log(box.innerHTML);
+
+        // box.classList.add("green");
+         // console.log(box.classList);
+            
+    </script>
+</body>
+</html>
