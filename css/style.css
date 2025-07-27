@@ -1,0 +1,26 @@
+.theme{
+            fill: aliceblue;
+            background-color: white;
+            background-repeat: repeat;
+        }
+        .dark{
+            background-color:rgb(36, 33, 33) ;
+            color: white;
+        }
+        button{
+            margin : 20px;
+            font-size: 20px;
+            background-color: black;
+            color:white;
+        }
+        .lightButton{
+            background-color: white;
+            color: black;
+        }
+        .buttoncolor{
+
+            background-color: rgb(36, 33, 33);
+            color: white;
+            
+            
+        }
